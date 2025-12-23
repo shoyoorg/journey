@@ -18,7 +18,6 @@ fastify.register(journeySecret)
 // Inicia a aplicação
 const start = async () => {
   try {
-    // Na Vercel isso não é usado, mas localmente a gente precisa disso
     await fastify.listen({ port: 3000, host: '0.0.0.0' })
   } catch (err) {
     fastify.log.error(err)
@@ -26,8 +25,6 @@ const start = async () => {
   }
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  start()
-}
+start()
 
 export default fastify

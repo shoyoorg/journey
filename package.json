@@ -1,0 +1,11 @@
+{
+  "name": "journey",
+  "version": "1.0.0",
+  "description": "Node.js project (ESM)",
+  "type": "module",
+  "private": true,
+
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  }

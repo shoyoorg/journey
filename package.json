@@ -4,9 +4,13 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "node index.js",
     "start": "node index.js"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2"
   }
 }
